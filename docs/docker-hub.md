@@ -28,6 +28,8 @@ Requirements:
 -	Meet [C-SDK requirements](https://docs.newrelic.com/docs/agents/c-sdk/get-started/c-sdk-compatibility-requirements).
 -	C-SDK version 1.2.0 or higher.
 
+To learn more about monitoring an application with the SDK visit the [GUIDE.md](https://github.com/newrelic/c-sdk/blob/master/GUIDE.md) in the C-SDK repo.
+
 ## Shell and daemon log access
 
 Using the `docker exec` command will give you access to a shell inside the docker container.
