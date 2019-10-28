@@ -4,7 +4,7 @@ The New Relic C daemon acts as a proxy between the C-SDK and the New Relic colle
 
 This image only contains the daemon and is not intended to be a one-container solution. If you would like your application and daemon installed in the same container, follow the documentation on our [GitHub](https://github.com/newrelic/c-sdk).
 
-*Data transmitted the daemon is not encrypted. We recommend only using a private network when connecting to the daemon.*
+*Data transmitted to the daemon is not encrypted. We recommend only using a private network when connecting to the daemon.*
 
 -	You can read more about the daemon: [New Relic daemon processes](https://docs.newrelic.com/docs/agents/c-sdk/get-started/introduction-c-sdk).
 -	Learn more about deploying the C-SDK and daemon in Docker: [Docker and other container environments: Install C SDK](https://docs.newrelic.com/docs/agents/c-sdk/install-configure/docker-other-container-environments-install-c-sdk)
