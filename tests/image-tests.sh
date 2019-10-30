@@ -21,6 +21,13 @@ verify_output()
 run_tests() {
   docker build -t c-daemon .
 
+  echo ${1//\/}
+  echo
+
+  name=version-check
+  docker run -d --name $name c-daemon
+  verify_output "-n $(docker logs $name | grep ${1//\/})" $name "check the version"
+
   name=debug-daemon
   docker run -d --name $name c-daemon --loglevel debug
   verify_output "-n $(docker logs $name | grep Debug)" $name "set the loglevel to debug"
@@ -61,7 +68,7 @@ echo "${versions[@]}"
 
 for dir in "${versions[@]}"; do
   cd $dir
-  run_tests
+  run_tests $dir
 done
 
 exit
