@@ -1,5 +1,7 @@
 # Daemon Docker Image
 
+[![Build Status](https://travis-ci.org/newrelic/newrelic-c-daemon-docker.svg?branch=master)](https://travis-ci.org/newrelic/newrelic-c-daemon-docker)
+
 This is a repository of base images for the New Relic Daemon. The New Relic Daemon is part of the New Relic [C-SDK](https://github.com/newrelic/c-sdk). The Dockerfile in this repo is meant to make it easy to run the daemon in a separate container from the SDK.
 
 ## Running the Image
