@@ -16,6 +16,6 @@ cd $version_short
 
 sed s/"ENV[[:space:]]NEWRELIC_VERSION/ENV NEWRELIC_VERSION v${version}"/ ../Dockerfile-template > Dockerfile
 
-# git checkout -b $version_short
-# git add .
-# git commit -m "version bump to ${version_short}"
+git checkout -b $version_short
+git add .
+git commit -m "version bump to ${version_short}"
