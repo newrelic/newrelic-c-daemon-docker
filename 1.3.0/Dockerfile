@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #------------------------------------------------------------------------------
 
-FROM alpine:3.10 AS build
+FROM alpine:3.18.4 AS build
 
 # install the dependencies needed to build the daemon
 RUN apk add --no-cache \
@@ -26,7 +26,7 @@ RUN set -ex; \
         chown root:root /usr/bin/newrelic-daemon; \
         chmod 777 /usr/bin/newrelic-daemon
 
-FROM alpine:3.10
+FROM alpine:3.18.4
 
 RUN apk add --no-cache \
                 ca-certificates
